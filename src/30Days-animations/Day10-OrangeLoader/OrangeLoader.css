@@ -1,0 +1,19 @@
+.orange-pulp {
+  animation: pulp 3.2s infinite linear;
+}
+
+.orange-pulp:nth-child(2) { animation-delay:  3s; }
+.orange-pulp:nth-child(3) { animation-delay: 2.8s; }
+.orange-pulp:nth-child(4) { animation-delay: 2.6s; }
+.orange-pulp:nth-child(5) { animation-delay: 2.4s; }
+.orange-pulp:nth-child(6) { animation-delay: 2.2s; }
+.orange-pulp:nth-child(7) { animation-delay: 2s; }
+.orange-pulp:nth-child(8) { animation-delay: 1.8s; }
+
+@keyframes pulp {
+  0%    { opacity: 0.3; }
+  10%   { opacity: 1; }
+  60%   { opacity: 1; }
+  70%   { opacity: 0.3; }
+  100%  { opacity: 0.3; }
+}

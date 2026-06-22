@@ -1,0 +1,28 @@
+import './App.css'
+import ScalingButton from './30Days-animations/Day01-ScalingButton/ScalingButton'
+import ScalingText from './30Days-animations/Day02-ScalingText/ScalingText'
+import BouncingBall from './30Days-animations/Day03-BouncingBall/BouncingBall'
+import FloatingBalloon from './30Days-animations/Day04-FloatingBalloon/FloatingBalloon'
+import TypingText from './30Days-animations/Day05-TypingText/TypingText'
+import CardFlip from './30Days-animations/Day06-CardFlip/CardFlip'
+import LikeAnimation from './30Days-animations/Day07-LikeAnimation/LikeAnimation'
+import ChatTypingIndicator from './30Days-animations/Day08-ChatTypingIndicator/ChatTypingIndicator'
+import PressButton3D from './30Days-animations/Day09-PressButton3D/PressButton3D'
+import OrangeLoader from './30Days-animations/Day10-OrangeLoader/OrangeLoader'
+import MorphingButton from './30Days-animations/Day11-MorphingButton/MorphingButton'
+import FadeInText from './30Days-animations/Day12-FadeInText/FadeInText'
+import PricingCards from './30Days-animations/Day13-HoverLiftCard/HoverLiftCard'
+import HoverLiftCard from './30Days-animations/Day13-HoverLiftCard/HoverLiftCard'
+import BackgroundGradientText from './30Days-animations/Day14-BackgroundGradientText/GradientText'
+import HourglassLoader from './30Days-animations/Day15-HourglassLoader/HourglassLoader'
+
+function App() {
+
+  return (
+    <div className='flex justify-center items-center mx-auto h-screen'>
+    <NotificationBell/>
+    </div>
+  )
+}
+
+export default App

@@ -1,0 +1,69 @@
+.top-sand    { animation: sandFlowTop    12s linear infinite; }
+.bottom-sand { animation: sandFlowBottom 12s linear infinite; }
+.stream      { animation: streamFlow     12s linear infinite; }
+.hourglass {
+  animation: rotate 12s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  /* hold upright */
+  0%   { transform: rotate(0deg); }
+  40%  { transform: rotate(0deg); }
+  /* first flip */
+  45%  { transform: rotate(180deg); }
+  /* hold flipped */
+  90%  { transform: rotate(180deg); }
+  /* second flip back */
+  94%  { transform: rotate(360deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes sandFlowTop {
+  0%   { height: 76.5px; top: 0%;  }
+  13%  { height: 50.5px; top: 17%; }
+  26%  { height: 25px; top: 34%; }
+  40%  { height: 0px;  top: 50%; }
+  /* hold + reset */
+  45%  { height: 0px;  top: 0%;  }
+  /* second flow */
+  57%  { height: 25px; top: 0%;  }
+  73%  { height: 50px; top: 0%;  }
+  88%  { height: 76px; top: 0%;  }
+  100% { height: 76.5px; top: 0%;  }
+}
+
+@keyframes sandFlowBottom {
+  0%   { height: 5px;  bottom: 0; }
+  13%  { height: 25px; bottom: 0; }
+  26%  { height: 50px; bottom: 0; }
+  40%  { height: 76px; bottom: 0; }
+  /* hold + reset */
+  45%  { height: 76px; bottom: 0;   }
+  /* second flow */
+  57%  { height: 50.5px; bottom: 17%; }
+  73%  { height: 25px; bottom: 34%; }
+  88%  { height: 0px;  bottom: 50%; }
+  100% { height: 5px;  bottom: 50%; }
+}
+
+@keyframes streamFlow {
+  /* first flow — stream from neck downward */
+  0%   { height: 76px; top: 50%; bottom: auto; }
+  40%  { height: 76px; top: 50%; bottom: auto; }
+  /* snap off during first flip */
+  41%  { height: 0px;  top: 50%; bottom: auto; }
+  /* snap on — now flows from neck downward on other side */
+  44%  { height: 0px;  top: auto; bottom: 50%; }
+  46%  { height: 76px; top: auto; bottom: 50%; }
+  88%  { height: 76px; top: auto; bottom: 50%; }
+  /* snap off during second flip */
+  89%  { height: 0px;  top: auto; bottom: 50%; }
+  /* wait for second flip to complete at 94% */
+  94%  { height: 0px;  top: 50%; bottom: auto; }
+  /* snap back on for next cycle */
+  95%  { height: 0px;  top: 50%; bottom: auto; }
+  96%  { height: 50px; top: 50%; bottom: auto; }
+  97%  { height: 65px; top: 50%; bottom: auto; }
+  98%  { height: 75px; top: 50%; bottom: auto; }
+  100% { height: 76px; top: 50%; bottom: auto; }
+}

@@ -1,0 +1,24 @@
+.balloon-float {
+  animation: simpleSway 4s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes sway {
+  0%, 100% { 
+    transform: translateX(-20px) translateY(-10px) rotate(-10deg); 
+  }
+  
+  50% { 
+    transform: translateX(20px) translateY(-10px) rotate(10deg); 
+  }
+}
+
+@keyframes simpleSway {
+  0%, 100% { 
+    transform: translateX(-30px) translateY(5px) rotate(-10deg); 
+  }
+  
+  50% { 
+    transform: translateX(30px) translateY(-5px) rotate(10deg); 
+  }
+}

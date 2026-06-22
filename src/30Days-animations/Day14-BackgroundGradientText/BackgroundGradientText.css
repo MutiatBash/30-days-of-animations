@@ -1,0 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Italiana&display=swap');
+
+body {
+  /* font-family: 'Playfair Display', serif; */
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: 'Great Vibes', cursive;
+}
+.animate-gradient {
+  animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes gradientShiftColor {
+  0%   { background-position: 0% 50%; filter: hue-rotate(0deg); }
+  50%  { background-position: 100% 50%; filter: hue-rotate(150deg); }
+  100% { background-position: 0% 50%; filter: hue-rotate(0deg); }
+}

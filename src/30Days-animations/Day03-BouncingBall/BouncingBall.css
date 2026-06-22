@@ -1,0 +1,89 @@
+/* .bounce-up:hover {
+  animation: bounceUp 0.5s ease-in-out infinite alternate;
+} */
+
+/* .bounce-up:hover {
+  animation: bounceUp 0.8s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+} */
+
+/* .bounce-up + .ball-shadow {
+  transform: scaleX(0.6);
+} */
+
+.bounce-up {
+  animation: bounce 0.9s infinite; 
+  transform-origin: bottom center;
+}
+
+.ball-shadow {
+  animation: shadow 0.9s infinite;
+  transform-origin: center;
+}
+
+@keyframes bounce {
+  /* 0%: IMPACT & SQUASH */
+  0% {
+    transform: translateY(0) scale(1.3, 0.7); /* Heavily squashed on the ground */
+    animation-timing-function: ease-out;      /* Shoots up fast, slows down at peak */
+  }
+
+  /* 15%: STRETCH (Leaving the ground) */
+  15% {
+    transform: translateY(-200px) scale(0.9, 1.2); /* Stretches upward */
+  }
+
+  /* 50%: THE PEAK (Apex of the jump) */
+  50% {
+    transform: translateY(-350px) scale(1, 1);  /* Normal shape at the very top */
+    animation-timing-function: ease-in;       /* Starts falling slow, accelerates down */
+  }
+
+  /* 85%: STRETCH (Falling fast) */
+  85% {
+    transform: translateY(-150px) scale(0.85, 1.2); /* Stretches downward due to speed */
+  }
+
+  /* 100%: IMPACT & SQUASH */
+  100% {
+    transform: translateY(0) scale(1.3, 0.7); /* Back to squash */
+  }
+}
+
+@keyframes shadow {
+  0% {
+    transform: scale(1.3);
+    opacity: 0.4;                             
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: scale(0.4);                  
+    opacity: 0.3;                          
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: scale(1.3);
+    opacity: 0.4;                             
+  }
+}
+
+/* 
+@keyframes bounceUp {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-25px); 
+  }
+  40% {
+    transform: translateY(-40px); 
+  }
+  60% {
+    transform: translateY(-55px); 
+  }
+  80% {
+    transform: translateY(-70px); 
+  }
+  100% {
+    transform: translateY(-85px); 
+  }
+}

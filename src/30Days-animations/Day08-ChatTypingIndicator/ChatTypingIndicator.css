@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap');
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+.typing-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #e45d8a;
+  display: inline-block;
+  animation: dot 1.2s infinite;
+}
+
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+.typed-msg {
+  opacity: 0;
+  animation: slideInUp 1s ease-out forwards;
+}
+.typed-msg:nth-child(2) { animation-delay: 1.5s; }
+.typed-msg:nth-child(3) { animation-delay: 3s; }
+
+.typing-bubble {
+  opacity: 0;
+  transform-origin: bottom left;
+  animation: softPop 0.8s ease-out both;
+  animation-delay: 4.5s;
+}
+
+@keyframes dot {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.5; }
+  30%            { transform: translateY(-2px); opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%); 
+    opacity: 0;                  
+  }
+  /* Slides into position */
+  to {
+    transform: translateY(0);    
+    opacity: 1;                 
+  }
+}
+
+@keyframes softPop {
+  0%   { transform: translate(-8px, 12px) scale(0.8); opacity: 0; }
+  60%  { transform: translate(1px, -1px) scale(1.05); opacity: 1; }
+  100% { transform: translate(0, 0) scale(1); opacity: 1; }
+}
