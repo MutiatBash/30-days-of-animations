@@ -13,8 +13,9 @@ import MorphingButton from './30Days-animations/Day11-MorphingButton/MorphingBut
 import FadeInText from './30Days-animations/Day12-FadeInText/FadeInText'
 import PricingCards from './30Days-animations/Day13-HoverLiftCard/HoverLiftCard'
 import HoverLiftCard from './30Days-animations/Day13-HoverLiftCard/HoverLiftCard'
-import BackgroundGradientText from './30Days-animations/Day14-BackgroundGradientText/GradientText'
+import BackgroundGradientText from './30Days-animations/Day14-BackgroundGradientText/BackgroundGradientText'
 import HourglassLoader from './30Days-animations/Day15-HourglassLoader/HourglassLoader'
+import NotificationBell from './30Days-animations/Day16-NotificationBell/NotificationBell'
 
 function App() {
 
