@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Great+Vibes&family=Fredoka+One&family=Dancing+Script&display=swap');
+
+.greet {
+  animation: scrollText 15s ease-in-out infinite forwards;
+  transform: translateY(60px);
+  font-family: 'Dancing Script', cursive;
+  /* font-family: 'Pacifico', cursive; */
+}
+
+@keyframes scrollText {
+
+  /* Hello */
+  0%, 6% { transform: translateY(0); }
+
+  /* Bonjour */
+  8%, 14% { transform: translateY(-100px); }
+
+  /* Annyeong */
+  16%, 22% { transform: translateY(-200px); }
+
+  /* Ẹ n lẹ́ */
+  24%, 30% { transform: translateY(-300px); }
+
+  /* Hola */
+  32%, 38% { transform: translateY(-400px); }
+
+  /* Ni Hao */
+  40%, 46% { transform: translateY(-500px); }
+
+  /* Ciao */
+  48%, 54% { transform: translateY(-600px); }
+
+  /* Ndewọ */
+  56%, 62% { transform: translateY(-700px); }
+
+  /* Namaste */
+  64%, 70% { transform: translateY(-800px); }
+
+  /* Aloha */
+  72%, 78% { transform: translateY(-900px); }
+
+  /* Hallo */
+  80%, 86% { transform: translateY(-1000px); }
+
+  /* Sannu */
+  88%, 94% { transform: translateY(-1100px); }
+
+  /* Last Hello */
+  95%       { transform: translateY(-1100px); }
+  97.5%       { transform: translateY(-1200px); }
+  100%      { transform: translateY(-1200px); }
+}
+

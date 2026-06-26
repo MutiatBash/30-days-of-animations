@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+/* .morphing-container {
+	animation: slideLeft 8s ease-in-out infinite;
+}
+
+.shine {
+	animation: shineOnce 8s ease-in-out infinite;
+} */
+
+.morph {
+	animation: morphIcon 5s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+	transform-origin: center center;
+}
+/* 
+.text-reveal {
+	animation: revealText 8s ease-in-out infinite;
+	opacity: 0;
+}
+
+.shine {
+	position: absolute;
+	top: -100%;
+	left: -100%;
+	width: 60%;
+	height: 300%;
+	background: linear-gradient(to bottom,
+			transparent,
+			rgba(255, 255, 255, 0.1),
+			rgba(255, 255, 255, 0.3),
+			rgba(255, 255, 255, 0.1),
+			transparent);
+	transform: rotate(-45deg) translateX(-200%);
+	z-index: 1;
+}
+
+.morph {
+	position: relative;
+	z-index: 2;
+} */
+
+@keyframes morphIcon {
+
+	/* PLAY */
+	0%,
+	15% {
+		clip-path: polygon(30% 20%, 30% 80%, 80% 50%);
+		transform: scale(1.2);
+	}
+
+	19% {
+		clip-path: polygon(30% 20%, 30% 80%, 80% 50%);
+		transform: scale(0.2) rotate(15deg);
+	}
+
+	23% {
+		clip-path: polygon(25% 20%, 42% 20%, 42% 80%, 25% 80%, 25% 20%, 58% 20%, 75% 20%, 75% 80%, 58% 80%, 58% 20%);
+		transform: scale(1.5);
+	}
+
+	/* PAUSE */
+	25%,
+	45% {
+		clip-path: polygon(25% 20%, 42% 20%, 42% 80%, 25% 80%, 25% 20%, 58% 20%, 75% 20%, 75% 80%, 58% 80%, 58% 20%);
+		transform: scale(1.2);
+	}
+
+	49% {
+		clip-path: polygon(25% 20%, 42% 20%, 42% 80%, 25% 80%, 25% 20%, 58% 20%, 75% 20%, 75% 80%, 58% 80%, 58% 20%);
+		transform: scale(0.2) rotate(-15deg);
+	}
+
+	53% {
+		clip-path: inset(20%);
+		transform: scale(1.5);
+	}
+
+	/* STOP */
+	55%,
+	78% {
+		clip-path: inset(20%);
+		border-radius: 5%;
+		transform: scale(1.2);
+	}
+
+	82% {
+		clip-path: inset(20%);
+		transform: scale(0.2) rotate(15deg);
+	}
+
+	86% {
+		clip-path: polygon(30% 20%, 30% 80%, 80% 50%);
+		transform: scale(1.5);
+	}
+
+	88%,
+	100% {
+		clip-path: polygon(30% 20%, 30% 80%, 80% 50%);
+		transform: scale(1.2);
+	}
+}
+
+@keyframes slideLeft {
+
+	0%,
+	65% {
+		transform: translateX(50px);
+	}
+
+	78%,
+	92% {
+		transform: translateX(-80px);
+	}
+
+	100% {
+		transform: translateX(50px);
+	}
+}
+
+@keyframes shineOnce {
+
+	0%,
+	80% {
+		transform: rotate(-45deg) translateX(-200%);
+	}
+
+	87% {
+		transform: rotate(-45deg) translateX(600%);
+	}
+
+	100% {
+		transform: rotate(-45deg) translateX(600%);
+	}
+}
+
+@keyframes revealText {
+
+	0%,
+	70% {
+		opacity: 0;
+		transform: translateX(20px);
+	}
+
+	80%,
+	91% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateX(20px);
+	}
+}
