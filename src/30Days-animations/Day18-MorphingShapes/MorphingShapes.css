@@ -1,0 +1,72 @@
+/* .morph-bg {
+	animation: morphBg 5s ease-in-out infinite;
+    transform: scale(1);
+} */
+.morph-shape {
+	animation: morphShape 5s ease-in-out infinite;
+}
+
+@keyframes morphBg {
+	0% {
+		background-color: #A2D2FF;
+	}
+
+	50% {
+		background-color: #FFAFCC;
+	}
+
+	100% {
+		background-color: #B6A8E7;
+	}
+}
+
+@keyframes morphShape {
+
+	/* Circle */
+	0% {
+		border-radius: 50%;
+		clip-path: inset(0);
+		background-color: indigo;
+		transform: rotate(0deg);
+	}
+
+	/* Rounded Square */
+	20% {
+		border-radius: 20%;
+		clip-path: inset(0);
+		background-color: violet;
+		transform: rotate(72deg);
+	}
+
+	/* Square */
+	40% {
+		border-radius: 0%;
+		clip-path: inset(0);
+		background-color: pink;
+		transform: rotate(144deg);
+	}
+
+	/* Triangle */
+	60% {
+		border-radius: 0%;
+		clip-path: polygon(79.4% 90.45%, 0.27% 55.23%, 70.33% 4.31%);
+		background-color: coral;
+		transform: rotate(216deg) scale(1.1);
+	}
+
+	/* Pentagon */
+	80% {
+		border-radius: 0%;
+		clip-path: polygon(50% 0%, 97.6% 34.5%, 79.4% 90.5%, 20.6% 90.5%, 2.4% 34.5%);
+		background-color: teal;
+		transform: rotate(288deg);
+	}
+
+	/* Back to Circle */
+	100% {
+		border-radius: 50%;
+		clip-path: inset(0);
+		background-color: indigo;
+		transform: rotate(360deg);
+	}
+}

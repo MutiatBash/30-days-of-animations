@@ -8,7 +8,7 @@
 	animation: shineOnce 8s ease-in-out infinite;
 } */
 
-.morph {
+.morph-icon {
 	animation: morphIcon 5s cubic-bezier(0.45, 0, 0.55, 1) infinite;
 	transform-origin: center center;
 }
@@ -34,7 +34,7 @@
 	z-index: 1;
 }
 
-.morph {
+.morph-icon {
 	position: relative;
 	z-index: 2;
 } */

@@ -18,13 +18,13 @@ import HourglassLoader from './30Days-animations/Day15-HourglassLoader/Hourglass
 import NotificationBell from './30Days-animations/Day16-NotificationBell/NotificationBell'
 import ScrollingText from './30Days-animations/Day17-ScrollingText/ScrollingText'
 import MorphingShapes from './30Days-animations/Day18-MorphingShapes/MorphingShapes'
-// import MorphingIcons from './30Days-animations/Day18-PlayPauseStop/MorphingShapes'
 import PlayPauseStop from './30Days-animations/Day18-PlayPauseStop/PlayPauseStop'
+import LowBatterryWarning from './30Days-animations/Day19-LowBatteryWarning/LowBatterryWarning'
 
 function App() {
   return (
     <div className='flex justify-center items-center mx-auto h-screen'>
-      {/* <PlayPauseStop /> */}
+      <MorphingShapes />
     </div>
   )
 }
