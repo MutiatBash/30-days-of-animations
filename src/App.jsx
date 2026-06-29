@@ -26,7 +26,7 @@ import ExpandingSearchBar from './30Days-animations/Day21-ExpandingSearchBar/Exp
 function App() {
   return (
     <div className='flex justify-center items-center mx-auto h-screen'>
-      <EyeFollowingMouse />
+      <ExpandingSearchBar />
     </div>
   )
 }
