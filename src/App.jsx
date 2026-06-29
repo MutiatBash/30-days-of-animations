@@ -20,11 +20,13 @@ import ScrollingText from './30Days-animations/Day17-ScrollingText/ScrollingText
 import MorphingShapes from './30Days-animations/Day18-MorphingShapes/MorphingShapes'
 import PlayPauseStop from './30Days-animations/Day18-PlayPauseStop/PlayPauseStop'
 import LowBatterryWarning from './30Days-animations/Day19-LowBatteryWarning/LowBatterryWarning'
+import EyeFollowingMouse from './30Days-animations/Day20-EyeFollowingMouse/EyeFollowingMouse'
+import ExpandingSearchBar from './30Days-animations/Day21-ExpandingSearchBar/ExpandingSearchBar'
 
 function App() {
   return (
     <div className='flex justify-center items-center mx-auto h-screen'>
-      <MorphingShapes />
+      <EyeFollowingMouse />
     </div>
   )
 }

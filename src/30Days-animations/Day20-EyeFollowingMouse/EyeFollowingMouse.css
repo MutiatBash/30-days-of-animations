@@ -1,0 +1,34 @@
+.eye-scene {
+    cursor: none;
+}
+
+.cursor-wand {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    display: none;
+    transform: rotate(0deg);
+    transform-origin: center center;
+}
+
+.sparkle {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9998;
+    animation: fadeSparkle 1s ease-out forwards;
+    color: #fff75e;
+    /* color: #facc15; */
+    font-weight: bold;
+}
+
+@keyframes fadeSparkle {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0) rotate(180deg);
+    }
+}
