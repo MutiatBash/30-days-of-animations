@@ -22,11 +22,13 @@ import PlayPauseStop from './30Days-animations/Day18-PlayPauseStop/PlayPauseStop
 import LowBatterryWarning from './30Days-animations/Day19-LowBatteryWarning/LowBatterryWarning'
 import EyeFollowingMouse from './30Days-animations/Day20-EyeFollowingMouse/EyeFollowingMouse'
 import ExpandingSearchBar from './30Days-animations/Day21-ExpandingSearchBar/ExpandingSearchBar'
+import LiquidFillLoader from './30Days-animations/Day22-LiquidFillLoader/LiquidFillLoader'
+import ArtGalleryCarousel from './30Days-animations/Day23-ArtGalleryCarousel/ArtGalleryCarousel'
 
 function App() {
   return (
     <div className='flex justify-center items-center mx-auto h-screen'>
-      <ExpandingSearchBar />
+      <ArtGalleryCarousel/>
     </div>
   )
 }
