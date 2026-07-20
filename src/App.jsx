@@ -24,11 +24,13 @@ import EyeFollowingMouse from './30Days-animations/Day20-EyeFollowingMouse/EyeFo
 import ExpandingSearchBar from './30Days-animations/Day21-ExpandingSearchBar/ExpandingSearchBar'
 import LiquidFillLoader from './30Days-animations/Day22-LiquidFillLoader/LiquidFillLoader'
 import ArtGalleryCarousel from './30Days-animations/Day23-ArtGalleryCarousel/ArtGalleryCarousel'
+import DayNightToggle from './30Days-animations/Day24-DayNightToggle/DayNightToggle'
+import NewtonsCradle from './30Days-animations/Day25-NewtonsCradle/NewtonsCradle'
 
 function App() {
   return (
     <div className='flex justify-center items-center mx-auto h-screen'>
-      <ArtGalleryCarousel/>
+      <NewtonsCradle/>
     </div>
   )
 }

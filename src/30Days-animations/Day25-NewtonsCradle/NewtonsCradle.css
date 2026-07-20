@@ -1,0 +1,62 @@
+.pendulum-container:first-child {
+    animation: swingLeft 2s ease-in infinite;
+}
+
+.pendulum-container:last-child {
+    animation: swingRight 2s ease-in infinite;
+}
+
+.ball {
+    width: 40px;
+    height: 40px;
+    /* background: radial-gradient(circle at 30% 30%, #a64dff, #590099); */
+    background: radial-gradient(circle at 30% 30%, #4d50ff, #260099);
+    /* background: radial-gradient(circle at 30% 30%, #ff4dd0, #990052); */
+    /* background: radial-gradient(circle at 30% 30%, #fb61be, #cf0283); */
+    /* background: radial-gradient(circle at 30% 30%, #d9b8fa, #ca9fdd); */
+    border-radius: 50%;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes swingLeft {
+    0% {
+        transform: rotate(0deg);
+        animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    25% {
+        transform: rotate(45deg);
+        animation-timing-function: cubic-bezier(0.5, 0, 0.75, 0);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes swingRight {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+        animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    75% {
+        transform: rotate(-45deg);
+        animation-timing-function: cubic-bezier(0.5, 0, 0.75, 0);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
