@@ -29,7 +29,6 @@
     opacity: 1;
 }
 
-/* stars */
 .dn-stars {
     position: absolute;
     inset: 0;
@@ -65,7 +64,6 @@
     }
 }
 
-/* clouds — layered circle */
 .dn-cloud {
     position: absolute;
     width: 60px;
@@ -144,7 +142,6 @@
     width: 52px;
 }
 
-/* birds */
 .dn-birds {
     position: absolute;
     inset: 0;
@@ -327,7 +324,6 @@
     left: 202px;
 }
 
-/* toggle switch */
 .dn-switch {
     position: absolute;
     top: 16px;

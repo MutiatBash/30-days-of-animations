@@ -24,7 +24,6 @@ const DayNightToggle = () => {
                     ))}
                 </div>
 
-                {/* clouds */}
                 <div className="dn-cloud dn-cloud-1" />
                 <div className="dn-cloud dn-cloud-2" />
                 <div className="dn-cloud dn-cloud-3" />
@@ -32,14 +31,12 @@ const DayNightToggle = () => {
                 <div className="dn-cloud dn-cloud-5" />
                 <div className="dn-cloud dn-cloud-6" />
 
-                {/* birds */}
                 <div className="dn-birds">
                     <span className="dn-bird dn-bird-1" />
                     <span className="dn-bird dn-bird-2" />
                     <span className="dn-bird dn-bird-3" />
                 </div>
 
-                {/* sun / moon disc */}
                 <div className="dn-disc-wrap">
                     <div className="dn-disc">
                         <div className="dn-layer dn-sun-layer">
@@ -52,8 +49,7 @@ const DayNightToggle = () => {
                         </div>
                     </div>
                 </div>
-
-                {/* toggle switch */}
+                
                 <button
                     className="dn-switch"
                     onClick={() => setIsNight((n) => !n)}
